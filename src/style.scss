@@ -1,32 +1,5 @@
-@import '_component/layout/layout';
 @import '_component/config/reset';
 @import '_component/config/color';
-
-
-
-html,
-body {
-  height: 100%;
-}
-
-.welcome {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  background-image: radial-gradient(ellipse, $color-buttercup, $color-golder-grass);
-
-  h1 {
-    color: $color-white;
-    font-size: 3.85rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: $color-white;
-    font-size: 1.3rem;
-    border: 0.2rem solid $color-white;
-    padding: 0.5rem;
-  }
-}
+@import '_component/config/font';
+@import '_component/layout/layout';
+@import '_component/layout/typography';
