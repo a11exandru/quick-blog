@@ -1,0 +1,33 @@
+footer {
+
+}
+
+.footer {
+  background-color: $color-buttercup2;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+  margin: 0 0.5rem;
+  text-align: center;
+}
+
+.footer__list {
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  
+  
+  li {
+    margin-bottom: 0.4rem;
+    
+    
+    a {
+      text-decoration: none;
+      color: $color-white;
+      justify-content: space-around;
+      padding: 0 1rem;
+    }
+  }
+}
+
