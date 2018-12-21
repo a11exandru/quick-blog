@@ -16,19 +16,19 @@ body {
   justify-content: center;
   align-items: center;
   background-image: radial-gradient(ellipse, $color-buttercup, $color-golder-grass);
-
-//linii adaugate de mine
+  
+  //linii adaugate de mine
   h1 {
     color: $color-white;
     width: 100%;
     font-weight: bold;
   }
-
+  
   p {
     width: 100%;
   }
-//pana aici
-
+  //pana aici
+  
   a.scroll-down {
     text-decoration: none;
     color: $color-white;
@@ -40,12 +40,12 @@ body {
     padding: 0.5rem;
     padding-right: 1.9rem;
     padding-left: 0.6rem;
-
+    
     &:hover {
       background-image: radial-gradient(ellipse, $color-buttercup , $color-golder-grass);
       // border: 0.1rem solid $color-buttercup;
     }
-
+    
     .continue-arrow {
       &:after {
         display: flex;
@@ -68,5 +68,53 @@ body {
     line-height: 1.8rem;
     margin: 1rem;
     padding: 0 1.4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-buttercup2;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.top {
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid $color-buttercup2;
+  position: relative;
+  left: 0.28rem;
+  top: -0.65rem;
+}
+
+.content {
+  padding: 1.5rem;
+
+  h2 {
+    font-size: 3rem;
+    color: $color-buttercup2;
+    font-weight: bold;
+    line-height: 4rem;
+    padding: 1rem 0.5rem;
+  }
+
+  blockquote {
+    border-left: 0.2rem solid $color-athens-gray;
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+
+
+  .blockquote-footer {
+    margin: 0.5rem;
   }
 }
