@@ -80,6 +80,20 @@ p {
   line-height: 1.4;
 }
 
+ol {
+  padding: 1.5rem;
+
+  li {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+}
+
+s {
+  line-height: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+
 .top {
   display: block;
   text-align: right;
