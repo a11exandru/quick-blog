@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 1fr 13rem;
     grid-template-rows: auto 1fr 5.7rem;
+
+    h2, p, ul {
+    grid-column: 1/2;
+    }
   }
 
   .content {

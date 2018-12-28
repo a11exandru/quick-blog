@@ -6,6 +6,10 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    h2, p, ul {
+      grid-column: 1/2;
+      }
   }
 
   .content,
