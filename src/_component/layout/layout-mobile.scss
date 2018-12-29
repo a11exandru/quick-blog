@@ -81,12 +81,17 @@ p {
   line-height: 1.4;
 }
 
-ol {
+.container {
+  ul {
+    list-style-type: disc;
+  }
+  ol, ul {
   padding: 1.5rem;
 
   li {
     line-height: 1.4;
     margin-bottom: 1rem;
+    }
   }
 }
 
