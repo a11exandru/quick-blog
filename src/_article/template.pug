@@ -1,0 +1,50 @@
+extends ../_component/layout/main
+
+block config
+  -
+    var title = template.head.title || 'change me, title'
+    var description= template.head.description ||'change me boss'
+
+block content
+  .content
+    each something in template.body
+      if something.type == "blockquote"
+        blockquote.blockquote
+          .blockquote__body
+            each paragraph in something.data
+              p=paragraph
+          .blockquote-footer
+            a(href=something.link , target='blank')=something.source
+
+
+      if something.type == "p" || something.type == "paragraph"
+        each paragraph in something.data
+          p=paragraph
+
+      if something.type == "paragraph-safe"
+        each paragraph in something.data
+          p!=paragraph
+
+      if something.type == "pre"
+        h3.pre-title=something.title
+        each dataValue in something.data
+          pre=dataValue
+
+      if something.type == "ul"
+        ul
+          each listItem in something.data
+            li=listItem
+
+      if something.type == "h3"
+        //- each textData in something.data
+        //-   h3=textData
+        h3=something.data
+
+      if something.type == "hr"
+        hr
+
+      if something.type == "h2"
+        h2=something.data
+
+      if something.type == "img"
+        img(src=something.src, alt="tell it about the boss, Alex Puiu")
