@@ -2,4 +2,13 @@
   h3=article.title
   p=article.description
   .article-link
-    a(href=`${baseUrl}article.link`) read more about #{article.title}
+    if article.title == "HTML5 Tutorial"
+      a(href=`${baseUrl}/article/html5-tutorial`) read more about #{article.title}
+    if article.title == "HTML Introduction"
+      a(href=`${baseUrl}/article/html-introduction`) read more about #{article.title}
+    if article.title == "HTML Editors"
+      a(href=`${baseUrl}/article/html-editors`) read more about #{article.title}
+    if article.title == "HTML Basic Examples"
+      a(href=`${baseUrl}/article/html-basic`) read more about #{article.title}
+    if article.title == "HTML Elements"
+      a(href=`${baseUrl}/article/html-elements`) read more about #{article.title}
