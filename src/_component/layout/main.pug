@@ -6,10 +6,10 @@ html
   head
     title=title
     meta(name='description', content=description)
-    link(rel="stylesheet", href= `${baseUrl}/style.css`)
   body
     include ../welcome/welcome
     .container
       block content
       include ../menu/menu
       include ../footer/footer
+link(rel="stylesheet", href= `${baseUrl}/style.css`)
